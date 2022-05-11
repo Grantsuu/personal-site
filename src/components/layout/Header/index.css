@@ -1,0 +1,10 @@
+.Header-container {
+    display: flex;
+    background-color: red;
+    padding: 0;
+}
+
+.Header-logo {
+    background-color:aquamarine;
+    padding: 0;
+}
