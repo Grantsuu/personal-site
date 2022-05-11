@@ -1,3 +1,7 @@
+body {
+    padding-top: 70px;
+}
+
 .App-main-container {
     background-color: green;
     text-align: center;

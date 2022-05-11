@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Col, Container, Row, ThemeProvider } from 'react-bootstrap';
-import Header from './components/layout/Header';
+import Navigation from './components/layout/Navigation';
 import './App.css';
 
 function App() {
@@ -9,16 +9,12 @@ function App() {
             <ThemeProvider
                 breakpoints={['lg', 'md', 'sm', 'xs']}
             >
+                <Navigation />
                 <Container fluid className='App-main-container'>
                     <Row>
                         <Col>
-                            <Header />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
                             <Routes>
-                                <Route path="/" element={<div>Home</div>} />
+                                <Route path="/" element={<div className='text-info'>Home</div>} />
                                 <Route path="/content" element={<div>Content</div>} />
                             </Routes>
                         </Col>
