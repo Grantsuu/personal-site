@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './assets/logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Col, Container, Row, ThemeProvider } from 'react-bootstrap';
+import Header from './components/layout/Header';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <ThemeProvider
+                breakpoints={['lg', 'md', 'sm', 'xs']}
+            >
+                <Container fluid className='App-main-container'>
+                    <Row>
+                        <Col>
+                            <Header />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Routes>
+                                <Route path="/" element={<div>Home</div>} />
+                                <Route path="/content" element={<div>Content</div>} />
+                            </Routes>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <div>Footer</div>
+                        </Col>
+                    </Row>
+                </Container>
+            </ThemeProvider>
+        </BrowserRouter>
+    );
 }
 
 export default App;
