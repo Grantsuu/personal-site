@@ -1,9 +1,16 @@
+import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Col, Container, Row, ThemeProvider } from 'react-bootstrap';
 import Navigation from './components/layout/Navigation';
+import Home from './views/Home';
 import './App.css';
 
 function App() {
+    
+    useEffect(()=>{
+        document.title = "Brand Name";
+    }, [])
+
     return (
         <BrowserRouter>
             <ThemeProvider
@@ -14,7 +21,7 @@ function App() {
                     <Row>
                         <Col>
                             <Routes>
-                                <Route path="/" element={<div className='text-info'>Home</div>} />
+                                <Route path="/" element={<Home />} />
                                 <Route path="/content" element={<div>Content</div>} />
                             </Routes>
                         </Col>
