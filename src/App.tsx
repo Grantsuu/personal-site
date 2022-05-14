@@ -17,12 +17,13 @@ function App() {
                 breakpoints={['lg', 'md', 'sm', 'xs']}
             >
                 <Navigation />
-                <Container fluid className='App-main-container'>
+                <Container fluid className='p-0'>
                     <Row>
                         <Col>
                             <Routes>
                                 <Route path="/" element={<Home />} />
-                                <Route path="/content" element={<div>Content</div>} />
+                                <Route path="/about" element={<div>About</div>} />
+                                <Route path="/contact" element={<div>Contact</div>} />
                             </Routes>
                         </Col>
                     </Row>
