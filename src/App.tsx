@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Col, Container, Row, ThemeProvider } from 'react-bootstrap';
-import Navigation from './components/layout/Navigation';
-import Home from './views/Home';
+import Navigation from 'components/layout/Navigation';
+import Home from 'views/Home';
 import './App.css';
 
 function App() {
@@ -16,10 +16,12 @@ function App() {
             <ThemeProvider
                 breakpoints={['lg', 'md', 'sm', 'xs']}
             >
-                <Navigation />
-                <Container fluid className='p-0'>
+                <Container fluid>
                     <Row>
-                        <Col>
+                        <Navigation />
+                    </Row>
+                    <Row>
+                        <Col className='p-0'>
                             <Routes>
                                 <Route path="/" element={<Home />} />
                                 <Route path="/about" element={<div>About</div>} />
@@ -28,7 +30,7 @@ function App() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
+                        <Col className='p-0'>
                             <div>Footer</div>
                         </Col>
                     </Row>

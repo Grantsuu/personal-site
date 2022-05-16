@@ -1,8 +1,8 @@
 import { Button, Carousel, Container } from 'react-bootstrap';
-import image1 from '../../../../assets/carousel/image1.jpg'
-import image2 from '../../../../assets/carousel/image2.jpg'
-import image3 from '../../../../assets/carousel/image3.jpg'
-import image4 from '../../../../assets/carousel/image4.jpg'
+import image1 from 'assets/carousel/image1.jpg'
+import image2 from 'assets/carousel/image2.jpg'
+import image3 from 'assets/carousel/image3.jpg'
+import image4 from 'assets/carousel/image4.jpg'
 import './index.css';
 
 function GraphicsCarousel() {
