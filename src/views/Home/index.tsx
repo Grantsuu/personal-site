@@ -8,7 +8,7 @@ function Home() {
     return (
         <Container fluid className="p-0">
             <Container fluid className="p-0">
-                <Tabs defaultActiveKey="carousel" id="uncontrolled-tab-example" className="">
+                <Tabs defaultActiveKey="carousel" id="uncontrolled-tab-example">
                     <Tab eventKey="carousel" title="Carousel">
                         <GraphicsCarousel />
                     </Tab>
@@ -19,7 +19,7 @@ function Home() {
                     </Tab>
                 </Tabs>
             </Container>
-            <Container fluid className="p-0 bg-white">
+            <Container fluid className="p-0 bg-light">
                 <Tabs defaultActiveKey="tab1" id="uncontrolled-tab-example" className="mb-3">
                     <Tab eventKey="tab1" title="Tab 1">
                         <TextImageSide align="left"/>

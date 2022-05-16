@@ -14,6 +14,7 @@ function GraphicsCarousel() {
                     <img    
                         src={image1}
                         alt="First slide"
+                        className="graphics-shared-main-img"
                     />
                     <Carousel.Caption className="text-left">
                         <h1>First slide label</h1>
