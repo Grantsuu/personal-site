@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import image from '../../../../assets/text-image.jpeg';
+import image from 'assets/text-image.jpeg';
 import "./index.css"
 
 interface TextImageSideProps {

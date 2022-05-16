@@ -1,12 +1,12 @@
 import { Container, Tabs, Tab } from 'react-bootstrap';
-import GraphicsCarousel from '../../components/content/graphics/GraphicsCarousel';
-import GraphicsBanner from '../../components/content/graphics/GraphicsBanner';
-import TextImageSide from '../../components/content/text/TextImageSide';
+import GraphicsCarousel from 'components/content/graphics/GraphicsCarousel';
+import GraphicsBanner from 'components/content/graphics/GraphicsBanner';
+import TextImageSide from 'components/content/text/TextImageSide';
 import './index.css'
 
 function Home() {
     return (
-        <Container fluid className="shadow p-0">
+        <Container fluid className="p-0">
             <Container fluid className="p-0">
                 <Tabs defaultActiveKey="carousel" id="uncontrolled-tab-example" className="">
                     <Tab eventKey="carousel" title="Carousel">

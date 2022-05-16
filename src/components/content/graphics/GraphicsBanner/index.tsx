@@ -1,5 +1,5 @@
 import { Button, Container } from 'react-bootstrap';
-import image1 from '../../../../assets/carousel/image1.jpg'
+import image1 from 'assets/carousel/image1.jpg'
 import './index.css'
 
 function GraphicsBanner() {
