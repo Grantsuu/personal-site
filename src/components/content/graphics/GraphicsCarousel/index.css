@@ -1,4 +1,4 @@
-@import '../index.css';
+@import 'components/common/index.css';
 
 .graphics-carousel-container {
     padding: 0;

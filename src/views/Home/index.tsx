@@ -1,6 +1,6 @@
 import { Container, Tabs, Tab } from 'react-bootstrap';
 import GraphicsCarousel from 'components/content/graphics/GraphicsCarousel';
-import GraphicsBanner from 'components/content/graphics/GraphicsBanner';
+import BannerW from 'components/content/widgets/BannerW';
 import TextImageSide from 'components/content/text/TextImageSide';
 import './index.css'
 
@@ -13,7 +13,7 @@ function Home() {
                         <GraphicsCarousel />
                     </Tab>
                     <Tab eventKey="banner" title="Banner">
-                        <GraphicsBanner />
+                        <BannerW />
                     </Tab>
                     <Tab eventKey="none" title="No Image">
                     </Tab>
