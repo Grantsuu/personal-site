@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Container, Row, ThemeProvider } from 'react-bootstrap';
 import { Footer, Navigation, ScrollToTopButton } from 'components/layout';
 import { Contact, Home } from 'views';
+import { routeNames } from 'routes';
 import './App.css';
 
 function App() {
@@ -21,9 +22,9 @@ function App() {
                 </Row>
                 <Row>
                     <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<div>About</div>} />
-                        <Route path="/contact" element={<Contact />} />
+                        <Route path={routeNames.HOME} element={<Home />} />
+                        <Route path={routeNames.ABOUT} element={<div>About</div>} />
+                        <Route path={routeNames.CONTACT} element={<Contact />} />
                     </Routes>
                 </Row>
                 <Row>

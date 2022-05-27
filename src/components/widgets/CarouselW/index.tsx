@@ -3,6 +3,7 @@ import image1 from 'assets/carousel/image1.jpg'
 import image2 from 'assets/carousel/image2.jpg'
 import image3 from 'assets/carousel/image3.jpg'
 import { ImageC } from 'components/common';
+import { routeNames } from 'routes';
 import './index.css';
 
 function CarouselW() {
@@ -19,7 +20,7 @@ function CarouselW() {
                     <Carousel.Caption className="text-start">
                         <h1 className="display-3">First slide label</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <Button href="/about" size="lg">
+                        <Button href={routeNames.ABOUT} size="lg">
                             Learn more
                         </Button>
                     </Carousel.Caption>
@@ -33,7 +34,7 @@ function CarouselW() {
                     <Carousel.Caption className="text-center">
                         <h1 className="display-3">Second slide label</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <Button href="/service" size="lg">
+                        <Button href={routeNames.SERVICE.ONE} size="lg">
                             Browse services
                         </Button>
                     </Carousel.Caption>
@@ -47,7 +48,7 @@ function CarouselW() {
                     <Carousel.Caption className="text-end">
                         <h1 className="display-3">Third slide label</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <Button href="/about" size="lg">
+                        <Button href={routeNames.ABOUT} size="lg">
                             Contact us
                         </Button>
                     </Carousel.Caption>

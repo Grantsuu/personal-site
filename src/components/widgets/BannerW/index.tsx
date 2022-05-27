@@ -1,5 +1,6 @@
 import { Button, Container } from 'react-bootstrap';
 import { ImageC, TextOverlayC } from 'components/common';
+import { routeNames } from 'routes';
 import './index.css';
 
 function BannerW() {
@@ -15,7 +16,7 @@ function BannerW() {
                 title="Brand Name"
                 subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 className="top-50 text-center text-light"
-                element={<Button href="/about" size="lg">Learn more</Button>}
+                element={<Button href={routeNames.ABOUT} size="lg">Learn more</Button>}
             />
         </Container>
     )
