@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Container, Row, ThemeProvider } from 'react-bootstrap';
 import { Footer, Navigation, ScrollToTopButton } from 'components/layout';
-import Home from 'views/Home';
+import { Contact, Home } from 'views';
 import './App.css';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/about" element={<div>About</div>} />
-                            <Route path="/contact" element={<div>Contact</div>} />
+                            <Route path="/contact" element={<Contact />} />
                         </Routes>
                     </Row>
                     <Row>
