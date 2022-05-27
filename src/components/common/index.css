@@ -1,0 +1,8 @@
+.graphics-shared-main-img {
+    object-fit: cover;
+    height: 35rem;
+}
+
+.common-text-shadow {
+    text-shadow: 2px 2px black;
+}
