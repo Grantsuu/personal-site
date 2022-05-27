@@ -29,7 +29,7 @@ function Footer() {
                         © 2022 Brand Name. All rights reserved.
                     </div>
                     <div>
-                        Website design by Granto
+                        Website designed by Granto
                     </div>
                 </div>
             </Stack>

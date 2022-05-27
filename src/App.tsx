@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Container, Row, ThemeProvider } from 'react-bootstrap';
-import { Footer, Navigation } from 'components/layout';
+import { Footer, Navigation, ScrollToTopButton } from 'components/layout';
 import Home from 'views/Home';
 import './App.css';
 
@@ -30,6 +30,7 @@ function App() {
                     <Row>
                         <Footer />
                     </Row>
+                    <ScrollToTopButton />
                 </Container>
             </ThemeProvider>
         </BrowserRouter>

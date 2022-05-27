@@ -1,4 +1,5 @@
 import Footer from './Footer'
 import Navigation from './Navigation'
+import ScrollToTopButton from './ScrollToTopButton'
 
-export {Footer, Navigation}
+export {Footer, Navigation, ScrollToTopButton}
