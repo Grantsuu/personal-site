@@ -1,7 +1,5 @@
 import { Container, Tabs, Tab } from 'react-bootstrap';
-import GraphicsCarousel from 'components/content/graphics/GraphicsCarousel';
-import BannerW from 'components/content/widgets/BannerW';
-import TextImageSide from 'components/content/text/TextImageSide';
+import { BannerW, CarouselW, FeaturetteW } from 'components/widgets';
 import './index.css'
 
 function Home() {
@@ -10,7 +8,7 @@ function Home() {
             <Container fluid className="p-0">
                 <Tabs defaultActiveKey="carousel" id="uncontrolled-tab-example">
                     <Tab eventKey="carousel" title="Carousel">
-                        <GraphicsCarousel />
+                        <CarouselW />
                     </Tab>
                     <Tab eventKey="banner" title="Banner">
                         <BannerW />
@@ -20,9 +18,10 @@ function Home() {
                 </Tabs>
             </Container>
             <Container fluid className="p-0 bg-light">
-                <Tabs defaultActiveKey="tab1" id="uncontrolled-tab-example" className="mb-3">
+                <Tabs defaultActiveKey="tab1" id="uncontrolled-tab-example">
                     <Tab eventKey="tab1" title="Tab 1">
-                        <TextImageSide align="left"/>
+                        <FeaturetteW align="right" />
+                        <FeaturetteW align="left" />
                     </Tab>
                 </Tabs>
             </Container>

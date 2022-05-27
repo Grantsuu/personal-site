@@ -2,22 +2,22 @@ import { Button, Carousel, Container } from 'react-bootstrap';
 import image1 from 'assets/carousel/image1.jpg'
 import image2 from 'assets/carousel/image2.jpg'
 import image3 from 'assets/carousel/image3.jpg'
-import image4 from 'assets/carousel/image4.jpg'
+import { ImageC } from 'components/common';
 import './index.css';
 
-function GraphicsCarousel() {
+function CarouselW() {
 
     return (
-        <Container fluid className="graphics-carousel-container">
+        <Container fluid className="p-0">
             <Carousel>
                 <Carousel.Item>
-                    <img    
+                    <ImageC
+                        large
                         src={image1}
-                        alt="First slide"
-                        className="graphics-shared-main-img"
+                        alt="slide 1"
                     />
-                    <Carousel.Caption className="text-left">
-                        <h1>First slide label</h1>
+                    <Carousel.Caption className="text-start">
+                        <h1 className="display-3">First slide label</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <Button href="/about" size="lg">
                             Learn more
@@ -25,12 +25,13 @@ function GraphicsCarousel() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
+                    <ImageC
+                        large
                         src={image2}
-                        alt="Second slide"
+                        alt="slide 2"
                     />
                     <Carousel.Caption className="text-center">
-                        <h1>Second slide label</h1>
+                        <h1 className="display-3">Second slide label</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <Button href="/service" size="lg">
                             Browse services
@@ -38,12 +39,13 @@ function GraphicsCarousel() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
+                    <ImageC
+                        large
                         src={image3}
-                        alt="Third slide"
+                        alt="slide 3"
                     />
-                    <Carousel.Caption className="text-right">
-                        <h1>Third slide label</h1>
+                    <Carousel.Caption className="text-end">
+                        <h1 className="display-3">Third slide label</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <Button href="/about" size="lg">
                             Contact us
@@ -51,9 +53,10 @@ function GraphicsCarousel() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
-                        src={image4}
-                        alt="Fourth slide"
+                    <ImageC
+                        large
+                        src="https://picsum.photos/1000"
+                        alt="slide 4"
                     />
                 </Carousel.Item>
             </Carousel>
@@ -61,4 +64,4 @@ function GraphicsCarousel() {
     )
 }
 
-export default GraphicsCarousel;
+export default CarouselW;

@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Col, Container, Row, ThemeProvider } from 'react-bootstrap';
-import Navigation from 'components/layout/Navigation';
+import { Container, Row, ThemeProvider } from 'react-bootstrap';
+import { Footer, Navigation } from 'components/layout';
 import Home from 'views/Home';
 import './App.css';
 
 function App() {
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         document.title = "Brand Name";
     }, [])
 
@@ -21,18 +21,14 @@ function App() {
                         <Navigation />
                     </Row>
                     <Row>
-                        <Col className='p-0'>
-                            <Routes>
-                                <Route path="/" element={<Home />} />
-                                <Route path="/about" element={<div>About</div>} />
-                                <Route path="/contact" element={<div>Contact</div>} />
-                            </Routes>
-                        </Col>
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/about" element={<div>About</div>} />
+                            <Route path="/contact" element={<div>Contact</div>} />
+                        </Routes>
                     </Row>
                     <Row>
-                        <Col className='p-0'>
-                            <div>Footer</div>
-                        </Col>
+                        <Footer />
                     </Row>
                 </Container>
             </ThemeProvider>

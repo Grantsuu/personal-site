@@ -1,0 +1,19 @@
+.carousel .carousel-caption {
+    display: block;
+    text-align: left;
+    font-size: 1.6rem;
+    top: 50%;
+    text-shadow: 2px 2px black;
+}
+
+.carousel .carousel-control-prev {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.carousel .carousel-control-next {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.carousel-caption a.btn {
+    text-shadow: 0px 0px black !important;
+}
