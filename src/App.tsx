@@ -22,9 +22,9 @@ function App() {
                 </Row>
                 <Row>
                     <Routes>
-                        <Route path={routeNames.HOME} element={<Home />} />
-                        <Route path={routeNames.ABOUT} element={<div>About</div>} />
-                        <Route path={routeNames.CONTACT} element={<Contact />} />
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<div>About</div>} />
+                        <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </Row>
                 <Row>
