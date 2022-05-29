@@ -48,7 +48,7 @@ function CarouselW() {
                     <Carousel.Caption className="text-end">
                         <h1 className="display-3">Third slide label</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <Button href={routeNames.ABOUT} size="lg">
+                        <Button href={routeNames.CONTACT} size="lg">
                             Contact us
                         </Button>
                     </Carousel.Caption>

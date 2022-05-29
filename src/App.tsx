@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Container, Row, ThemeProvider } from 'react-bootstrap';
 import { Footer, Navigation, ScrollToTopButton } from 'components/layout';
 import { Contact, Home } from 'views';
-import { routeNames } from 'routes';
+
 import './App.css';
 
 function App() {
