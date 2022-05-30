@@ -47,7 +47,9 @@ function ContactFormW() {
                         Please enter your message.
                     </Form.Control.Feedback>
                 </Form.Group>
-                <Button type="submit">Submit</Button>
+                <div className="d-block text-center">
+                    <Button type="submit">Submit</Button>
+                </div>
             </Form>
         </Container>
     )

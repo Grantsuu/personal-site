@@ -10,9 +10,9 @@ function Contact() {
                 <div className="">
                     <h1>Contact Us</h1>
                 </div>
-                <Stack direction="horizontal" className="p-2 w-50 mx-auto">
+                <Stack direction="vertical" className="p-2 w-50 mx-auto">
+                <div>+1 (888) 888-8888</div>
                     <div>
-                        Email:
                         <Link
                             to='#'
                             onClick={(e) => {
@@ -24,7 +24,6 @@ function Contact() {
                             YourEmailHere@website.com
                         </Link>
                     </div>
-                    <div className="ms-auto">Phone: +1 (888) 888-8888</div>
                 </Stack>
                 <hr className="w-50 mx-auto"></hr>
                 <div>
