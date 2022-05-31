@@ -14,20 +14,20 @@ function App() {
 
     return (
         <ThemeProvider
-            breakpoints={['lg', 'md', 'sm', 'xs']}
+            breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
         >
-            <Container fluid>
-                <Row>
+            <Container fluid className="p-0">
+                <Row className="m-0">
                     <Navigation />
                 </Row>
-                <Row>
+                <Row className="m-0">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<div>About</div>} />
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </Row>
-                <Row>
+                <Row className="m-0">
                     <Footer />
                 </Row>
                 <ScrollToTopButton />
